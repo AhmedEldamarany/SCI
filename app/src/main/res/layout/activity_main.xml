@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ahmed.sci.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fullname">
+
+        <EditText
+            android:maxLines="1"
+android:hint="name"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:maxLines="1"
+            android:hint="Father"
+            android:id="@+id/father"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:maxLines="1"
+            android:hint="Grandpa"
+            android:id="@+id/grandpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:maxLines="1"
+            android:hint="grand grandpa"
+            android:id="@+id/ggrandpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/fullname">
+
+
+        <EditText
+            android:id="@+id/Nid"
+            android:maxLines="1"
+            android:hint="National Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+        <EditText
+            android:maxLines="1"
+            android:hint="Phone"
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+            <EditText
+                android:maxLines="1"
+                android:hint="MobilePhone"
+                android:id="@+id/cell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:maxLines="1"
+                android:hint="Email Address"
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/address"
+                android:hint="Physical Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sex"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/male"
+                    android:text="male"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/female"
+                    android:text="Female"/>
+
+            </RadioGroup>
+            <EditText
+                android:maxLines="8"
+                android:hint="Notes"
+                android:id="@+id/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <Button
+                android:id="@+id/submitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
